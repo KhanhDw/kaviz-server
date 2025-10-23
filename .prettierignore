@@ -1,0 +1,20 @@
+# Build artifacts
+dist/
+build/
+.out/
+
+# Dependency directories
+node_modules/
+
+# Ignore all dotfiles
+.*
+
+# Prisma generated files
+prisma/generated/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/

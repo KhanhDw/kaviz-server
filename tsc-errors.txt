@@ -1,0 +1,4 @@
+src/infrastructure/database/mysqlClient.ts(2,30): error TS2307: Cannot find module '@prisma/mysql-client' or its corresponding type declarations.
+src/infrastructure/di/container.ts(2,30): error TS2307: Cannot find module '@prisma/mysql-client' or its corresponding type declarations.
+src/infrastructure/prisma/UserRepositoryPrisma.ts(1,30): error TS2307: Cannot find module '@prisma/mysql-client' or its corresponding type declarations.
+src/infrastructure/prisma/UserRepositoryPrisma.ts(27,22): error TS7006: Parameter 'user' implicitly has an 'any' type.
