@@ -7,17 +7,21 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "rootDir": "src",
-    "outDir": "dist",
-    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
     "paths": {
-      "@": ["src/*"],
-      "@application/*": ["src/application/*"],
-      "@domain/*": ["src/domain/*"],
-      "@infrastructure/*": ["src/infrastructure/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "@prisma/mysql-client": [
-        "src/infrastructure/database/prisma/node_modules/@prisma/mysql-client"
+      "@application/*": [
+        "src/application/*"
+      ],
+      "@domain/*": [
+        "src/domain/*"
+      ],
+      "@infrastructure/*": [
+        "src/infrastructure/*"
+      ],
+      "@interfaces/*": [
+        "src/interfaces/*"
       ]
     },
     "sourceMap": true,
@@ -27,8 +31,11 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/infrastructure/database/prisma/node_modules/@prisma/mysql-client/**/*.ts",
-    "src/infrastructure/database/prisma/node_modules/@prisma/mysql-client/**/*.d.ts"
+    "prisma/generated/mysql-client/**/*.ts",
+    "prisma/generated/mysql-client/**/*.d.ts"
   ],
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

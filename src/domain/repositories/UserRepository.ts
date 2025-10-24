@@ -1,3 +1,4 @@
+// src/domain/repositories/UserRepository.ts
 import { User } from '@domain/entities/User.js';
 
 export abstract class UserRepository {

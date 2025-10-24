@@ -18,7 +18,7 @@
   "author": "giakhanh",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.0.0",
+    "@prisma/client": "^5.22.0",
     "awilix": "^8.0.0",
     "fastify": "^5.0.0"
   },

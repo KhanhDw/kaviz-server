@@ -1,0 +1,4 @@
+src/infrastructure/di/container.ts(2,30): error TS2307: Cannot find module '@prisma/mysql-client' or its corresponding type declarations.
+src/infrastructure/di/container.ts(10,25): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/infrastructure/prisma/UserRepositoryPrisma.ts(1,50): error TS2307: Cannot find module '@prisma/mysql-client' or its corresponding type declarations.
+src/interfaces/routes/userRoutes.ts(6,5): error TS2554: Expected 1 arguments, but got 2.

@@ -1,0 +1,5 @@
+
+> kaviz_server@1.0.0 build
+> tsc
+
+src/infrastructure/di/container.ts(2,30): error TS2307: Cannot find module '../../prisma/generated/mysql-client/index.js' or its corresponding type declarations.

@@ -1,6 +1,6 @@
 import { randomUUID } from 'crypto';
-import { User } from '../../domain/entities/User.js';
-import { UserRepository } from '../../domain/repositories/UserRepository.js';
+import { User } from '@domain/entities/User.js';
+import { UserRepository } from '@domain/repositories/UserRepository.js';
 
 export class CreateUserUseCase {
   userRepository: UserRepository;
