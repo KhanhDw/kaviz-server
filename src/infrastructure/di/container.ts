@@ -15,7 +15,7 @@ prisma.$connect().catch((error: Error) => {
 });
 
 const container = createContainer({
-  injectionMode: InjectionMode.CLASSIC // Explicitly set injection mode
+  injectionMode: InjectionMode.CLASSIC, // Explicitly set injection mode
 });
 
 container.register({

@@ -30,13 +30,16 @@ After reviewing the code, the implementation appeared to be correct. However, th
 ## Changes Made
 
 ### src/infrastructure/di/container.ts
+
 - Added explicit injection mode configuration
 - Kept existing dependency registration but with proper injection mode
 
 ### src/application/use-cases/SelectAllUserUseCase.ts
+
 - Added `private readonly` modifier to userRepository property
 
 ### src/infrastructure/prisma/UserRepositoryPrisma.ts
+
 - Added `private readonly` modifier to prisma property
 - Added logging and error checking in findAll method
 - Simplified constructor parameter (removed destructuring)
@@ -55,11 +58,13 @@ After implementing the fixes:
 ## Conclusion
 
 The main issues were related to:
+
 1. Awilix dependency injection configuration with ES modules
 2. Prisma client not being properly initialized/injected
 3. Missing error handling that would have helped identify the issues earlier
 
 The solution involved:
+
 1. Properly configuring Awilix container with explicit injection mode
 2. Ensuring correct property declarations with appropriate modifiers
 3. Adding proper error handling and logging to identify initialization issues

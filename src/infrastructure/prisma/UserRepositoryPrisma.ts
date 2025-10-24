@@ -29,11 +29,11 @@ export class UserRepositoryPrisma extends UserRepository {
     if (!this.prisma) {
       throw new Error('Prisma client is not initialized');
     }
-    
+
     if (!this.prisma.user) {
       throw new Error('Prisma user model is not available');
     }
-    
+
     const users = await this.prisma.user.findMany();
     return users.map((u: PrismaUser) => new User(u.id, u.name, u.email));
   }
